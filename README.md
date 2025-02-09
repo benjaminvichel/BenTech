@@ -22,8 +22,12 @@ Before starting the project, you need to create a configuration file with your s
     - **`YOUR_USERNAME`**: The username for authentication.  
     - **`YOUR_PASSWORD`**: The password for authentication.
 
-⚠️ **Important:** This project is configured to use Aiven as the default database provider.  
-If you wish to use another provider, ensure your connection string matches the required format and parameters,
+⚠️ Important: Storing credentials directly in a configuration file is not secure.
+It is recommended to use secure credential storage methods, such as environment variables or the Microsoft Configuration API (User Secrets / Azure Key Vault).
+If you decide to keep the connection string in the file, ensure it is excluded from version control and accessible only to authorized users.
+
+This project is configured to use Aiven as the default database provider.
+If you wish to use another provider, ensure your connection string matches the required format and parameters.
 
 ### Database Schema
 
